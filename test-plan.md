@@ -1,94 +1,94 @@
-# Test Plan — Open-Meteo API Quality Lab
+# Plano de Testes — Open-Meteo API Quality Lab
 
-## 1. Project Overview
+## 1. Visão Geral do Projeto
 
-This project focuses on manual API testing of the Open-Meteo Forecast API using Postman. The objective is to validate response status codes, response structure, data types, timezone information, invalid parameters, and basic response time.
+Este projeto tem como objetivo realizar testes manuais de API na Open-Meteo Forecast API utilizando o Postman. O foco é validar códigos de status HTTP, estrutura das respostas, tipos de dados, informações de fuso horário, tratamento de parâmetros inválidos e tempo básico de resposta.
 
-## 2. Test Objectives
+## 2. Objetivos dos Testes
 
-- Validate successful API requests.
-- Verify HTTP status codes for valid and invalid requests.
-- Check required parameters and response structure.
-- Validate data types and timezone information.
-- Verify API behavior when invalid weather variables or parameters are provided.
-- Measure basic response time using a predefined practice threshold.
+- Validar requisições bem-sucedidas à API.
+- Verificar códigos de status HTTP para requisições válidas e inválidas.
+- Validar parâmetros obrigatórios e a estrutura das respostas.
+- Verificar tipos de dados e informações de fuso horário.
+- Avaliar o comportamento da API diante de variáveis meteorológicas ou parâmetros inválidos.
+- Medir o tempo de resposta com base em um limite definido para fins de prática.
 
-## 3. Scope of Testing
+## 3. Escopo dos Testes
 
-### In Scope
+### Incluído no escopo
 
-- Valid weather forecast requests.
-- Hourly forecast data.
-- Timezone and UTC offset validation.
-- Current weather data types.
-- Response metadata and structure.
-- Missing required parameters.
-- Invalid parameters and weather variables.
-- Basic response time validation.
+- Requisições válidas de previsão meteorológica.
+- Validação dos dados de previsão por hora.
+- Validação do fuso horário e do deslocamento UTC.
+- Verificação dos tipos de dados das informações meteorológicas atuais.
+- Validação dos metadados e da estrutura das respostas.
+- Verificação de parâmetros obrigatórios ausentes.
+- Testes com parâmetros e variáveis meteorológicas inválidos.
+- Validação básica do tempo de resposta.
 
-### Out of Scope
+### Fora do escopo
 
-- Performance and load testing under high traffic.
-- Security penetration testing.
-- Automated testing frameworks.
-- Mobile application testing.
-- Validation of meteorological accuracy against independent sources.
+- Testes de carga e desempenho sob alto volume de requisições.
+- Testes de invasão ou análise aprofundada de segurança.
+- Uso de frameworks de automação de testes.
+- Testes de aplicativos móveis.
+- Validação da precisão meteorológica com fontes independentes.
 
-## 4. Tools and Environment
+## 4. Ferramentas Utilizadas
 
-- **Postman Web:** API requests and test assertions.
-- **Postman Desktop Agent:** Connectivity between Postman Web and the API.
-- **Jira:** Test activity tracking and documentation.
-- **GitHub:** Test documentation and evidence organization.
-- **Open-Meteo Forecast API:** API under test.
+- **Postman Web:** execução de requisições e validações com scripts de teste.
+- **Postman Desktop Agent:** comunicação entre o Postman Web e a API.
+- **Jira:** organização e acompanhamento das atividades de teste.
+- **GitHub:** versionamento e publicação da documentação e das evidências.
+- **Open-Meteo Forecast API:** API sob teste.
 
-## 5. Test Environment
+## 5. Ambiente de Testes
 
-- API endpoint: `https://api.open-meteo.com/v1/forecast`
-- Location used: Manaus, Amazonas, Brazil.
+- Endpoint: `https://api.open-meteo.com/v1/forecast`
+- Localidade utilizada: Manaus, Amazonas, Brasil.
 - Latitude: `-3.119`
 - Longitude: `-60.0217`
-- Timezone: `America/Manaus`
-- Test approach: Manual API testing with Postman scripts.
+- Fuso horário esperado: `America/Manaus`
+- Abordagem: testes manuais de API com validações em JavaScript no Postman.
 
-## 6. Test Approach
+## 6. Estratégia de Testes
 
-Each test case is executed by sending an HTTP request in Postman and evaluating the response using JavaScript assertions.
+Cada caso de teste é executado por meio de uma requisição HTTP no Postman. As respostas são avaliadas com assertions em JavaScript.
 
-The validation includes status codes, response properties, expected data types, parameter handling, and response time.
+As validações incluem códigos de status, propriedades da resposta, tipos de dados esperados, tratamento de parâmetros e tempo de resposta.
 
-A test is marked **PASS** when all its defined assertions pass. A test is marked **FAIL** when one or more assertions fail. Results must be confirmed in Postman before the final status is published.
+Um caso de teste será marcado como **PASS** quando todas as validações definidas forem aprovadas. Será marcado como **FAIL** quando uma ou mais validações falharem. Os resultados devem ser confirmados no Postman antes da publicação do status final.
 
-## 7. Entry and Exit Criteria
+## 7. Critérios de Entrada e Saída
 
-### Entry Criteria
+### Critérios de entrada
 
-- The API endpoint is accessible.
-- Postman is configured and connected.
-- Test cases and expected results are documented.
+- O endpoint da API está acessível.
+- O Postman está configurado e conectado.
+- Os casos de teste e os resultados esperados estão documentados.
 
-### Exit Criteria
+### Critérios de saída
 
-- All planned test cases have been executed.
-- Results are recorded in the test documentation.
-- Relevant evidence is linked in the repository.
-- Any failures are documented and reviewed.
+- Todos os casos planejados foram executados.
+- Os resultados foram registrados na documentação.
+- As evidências relevantes estão vinculadas ao repositório.
+- Eventuais falhas foram documentadas e analisadas.
 
-## 8. Test Deliverables
+## 8. Entregáveis
 
-- `README.md` — project overview and summary.
-- `test-plan.md` — testing strategy, scope, and criteria.
-- `test-cases.md` — detailed test scenarios and expected results.
-- `test-evidence.md` — evidence references and execution notes.
-- `evidence/` — screenshots supporting the test results.
+- `README.md` — apresentação e resumo do projeto.
+- `test-plan.md` — estratégia, escopo e critérios dos testes.
+- `test-cases.md` — cenários detalhados e resultados esperados.
+- `test-evidence.md` — referências às evidências e registros de execução.
+- `evidence/` — capturas de tela que apoiam os resultados dos testes.
 
-## 9. Risks and Limitations
+## 9. Riscos e Limitações
 
-- API responses may vary because forecast data changes over time.
-- Network connectivity can affect request execution and response time.
-- The response-time threshold of 5,000 ms is a practice criterion for this project, not an official Open-Meteo service-level agreement.
-- Results depend on the actual responses and assertions observed during execution.
+- As respostas da API podem variar porque os dados meteorológicos são atualizados.
+- A conexão com a internet pode afetar a execução das requisições e o tempo de resposta.
+- O limite de 5.000 ms é um critério definido para este projeto de prática, não um acordo oficial de nível de serviço da Open-Meteo.
+- Os resultados dependem das respostas efetivamente recebidas e das validações executadas.
 
-## 10. Final Notes
+## 10. Considerações Finais
 
-This project is intended for learning and demonstrating fundamental API testing skills, test documentation, defect observation, and QA workflow organization.
+Este projeto tem finalidade educacional e demonstra conhecimentos fundamentais de testes de API, documentação de casos de teste, registro de evidências e organização do fluxo de trabalho de QA.
