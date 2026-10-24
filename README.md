@@ -73,7 +73,6 @@ pm.test("Current weather data exists", function () {
 
 ## Próximas melhorias
 
-- Adicionar capturas de tela dos resultados do Postman.
 - Documentar os casos de teste com pré-condições, passos e resultados esperados.
 - Organizar evidências e resultados detalhados.
 - Ampliar a cobertura com novos cenários de teste.
