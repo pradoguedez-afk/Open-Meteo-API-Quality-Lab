@@ -37,23 +37,39 @@ Os comentários de cada caso devem documentar:
 
 ## 4. Organização dos arquivos
 
-As capturas de tela poderão ser adicionadas ao repositório em uma pasta chamada `evidence/`.
+## Evidence Screenshots
 
-Sugestão de nomes:
+The following screenshots document the execution of the API test cases in Postman.
 
-- `API-001-valid-weather-request.png`
-- `API-002-hourly-forecast.png`
-- `API-003-timezone-validation.png`
-- `API-004-invalid-parameter.png`
-- `API-005-missing-parameter.png`
-- `API-006-current-data-types.png`
-- `API-007-invalid-weather-variable.png`
-- `API-008-response-metadata.png`
-- `API-009-response-time.png`
-- `API-010-response-structure.png`
+### API-001 — Valid Weather Request
+![API-001 Evidence](evidence/001.png)
 
-**Importante:** adicionar somente capturas reais das execuções realizadas. Não utilizar imagens fictícias como evidência de teste.
+### API-002 — Hourly Forecast Validation
+![API-002 Evidence](evidence/002.png)
 
+### API-003 — Timezone Validation
+![API-003 Evidence](evidence/003.png)
+
+### API-004 — Invalid Parameter Validation
+![API-004 Evidence](evidence/004.png)
+
+### API-005 — Missing Required Parameters
+![API-005 Evidence](evidence/005.png)
+
+### API-006 — Current Weather Data Types
+![API-006 Evidence](evidence/006.png)
+
+### API-007 — Invalid Weather Variable
+![API-007 Evidence](evidence/007.png)
+
+### API-008 — Response Metadata Validation
+![API-008 Evidence](evidence/008.png)
+
+### API-009 — Response Time Validation
+![API-009 Evidence](evidence/009.png)
+
+### API-010 — Response Structure Validation
+![API-010 Evidence](evidence/010.png)
 ## 5. Critérios de qualidade das evidências
 
 - A captura deve permitir identificar o caso de teste.
