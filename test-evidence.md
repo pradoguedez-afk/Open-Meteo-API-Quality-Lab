@@ -39,37 +39,39 @@ Os comentários de cada caso devem documentar:
 
 ## Evidence Screenshots
 
+## Evidence Screenshots
+
 The following screenshots document the execution of the API test cases in Postman.
 
 ### API-001 — Valid Weather Request
-![API-001 Evidence](evidence/001.png)
+![API-001 Evidence](evidence-meteo-api/001.png)
 
 ### API-002 — Hourly Forecast Validation
-![API-002 Evidence](evidence/002.png)
+![API-002 Evidence](evidence-meteo-api/002.png)
 
 ### API-003 — Timezone Validation
-![API-003 Evidence](evidence/003.png)
+![API-003 Evidence](evidence-meteo-api/003.png)
 
 ### API-004 — Invalid Parameter Validation
-![API-004 Evidence](evidence/004.png)
+![API-004 Evidence](evidence-meteo-api/004.png)
 
 ### API-005 — Missing Required Parameters
-![API-005 Evidence](evidence/005.png)
+![API-005 Evidence](evidence-meteo-api/005.png)
 
-### API-006 — Current Weather Data Types
-![API-006 Evidence](evidence/006.png)
+### API-006 — Response Structure Integrity
+![API-006 Evidence](evidence-meteo-api/006.png)
 
-### API-007 — Invalid Weather Variable
-![API-007 Evidence](evidence/007.png)
+### API-007 — Invalid Endpoint Check
+![API-007 Evidence](evidence-meteo-api/007.png)
 
-### API-008 — Response Metadata Validation
-![API-008 Evidence](evidence/008.png)
+### API-008 — Temperature Unit Parameter
+![API-008 Evidence](evidence-meteo-api/008.png)
 
-### API-009 — Response Time Validation
-![API-009 Evidence](evidence/009.png)
+### API-009 — Maximum Past Days Parameter
+![API-009 Evidence](evidence-meteo-api/009.png)
 
-### API-010 — Response Structure Validation
-![API-010 Evidence](evidence/010.png)
+### API-010 — Response Time Performance
+![API-010 Evidence](evidence-meteo-api/010.png)
 ## 5. Critérios de qualidade das evidências
 
 - A captura deve permitir identificar o caso de teste.
